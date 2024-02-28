@@ -1,35 +1,31 @@
 using System;
-using LearnClasses;
-
 
 namespace LearnClasses
 {
     public class Person
     {
-        public string? Name;
-        public void Introduce(string To)
+        private DateTime _birthdate;
+
+        // Use PascalCase for method names
+        public void SetBirthdate(DateTime birthdate)
         {
-            System.Console.WriteLine("Hi {0}, My name is {1}", To, Name);
+            _birthdate = birthdate;
         }
-        public static Person Parse(string str)
+
+        // Use PascalCase for method names
+        public DateTime GetBirthdate()
         {
-            var person = new Person();
-            person.Name = str;
-            return person;
+            return _birthdate;
         }
     }
+
     class Program
     {
         static void Main(string[] args)
         {
-
-            var point = new Point(10,20);
-            point.Move(new Point(40,50));
-            System.Console.WriteLine("point x is at {0},{1}",point.X,point.Y);
-            point.Move(100,200);
-            System.Console.WriteLine("point x is at {0},{1}",point.X,point.Y);
-            x
+            var person = new Person();
+            person.SetBirthdate(new DateTime(1982, 1, 1)); // Correct the capitalization of DateTime
+            Console.WriteLine(person.GetBirthdate()); // Use Console instead of System.Console
         }
     }
-
 }
