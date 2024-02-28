@@ -28,6 +28,7 @@ namespace LearnClasses
             System.Console.WriteLine("point x is at {0},{1}",point.X,point.Y);
             point.Move(100,200);
             System.Console.WriteLine("point x is at {0},{1}",point.X,point.Y);
+            x
         }
     }
 

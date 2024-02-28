@@ -1,6 +1,6 @@
 ﻿namespace LearnClasses;
 
-public class Class1
+public class Order
 {
 
 }

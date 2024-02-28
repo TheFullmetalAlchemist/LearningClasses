@@ -23,3 +23,4 @@ c:\Users\vj366\classes\LearnClasses\obj\Debug\net8.0\refint\LearnClasses.dll
 c:\Users\vj366\classes\LearnClasses\obj\Debug\net8.0\LearnClasses.pdb
 c:\Users\vj366\classes\LearnClasses\obj\Debug\net8.0\LearnClasses.genruntimeconfig.cache
 c:\Users\vj366\classes\LearnClasses\obj\Debug\net8.0\ref\LearnClasses.dll
+c:\Users\vj366\classes\LearnClasses\obj\Debug\net8.0\LearnClasses.sourcelink.json
