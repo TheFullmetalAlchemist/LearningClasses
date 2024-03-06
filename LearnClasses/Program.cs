@@ -1,21 +1,26 @@
 using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace LearnClasses
 {
-    public class Person
+    public class PresentationObject
     {
-        private DateTime _birthdate;
+       public int Height{get; set;}
+       public int Width{get; set;}
 
-        // Use PascalCase for method names
-        public void SetBirthdate(DateTime birthdate)
-        {
-            _birthdate = birthdate;
-        }
+       public void Copy(){
+            System.Console.WriteLine("object is copied");
+       }
+       public void Duplicate(){
+        System.Console.WriteLine("object is duplicated");
+       }
+    }
+    public class Text : PresentationObject{
+        public int Fontsize{get; set;}
+        public int Fontname{get; set;}
 
-        // Use PascalCase for method names
-        public DateTime GetBirthdate()
-        {
-            return _birthdate;
+        public void Hyperlink(string URL){
+            System.Console.WriteLine("URL is added" + URL);
         }
     }
 
@@ -23,9 +28,9 @@ namespace LearnClasses
     {
         static void Main(string[] args)
         {
-            var person = new Person();
-            person.SetBirthdate(new DateTime(1982, 1, 1)); // Correct the capitalization of DateTime
-            Console.WriteLine(person.GetBirthdate()); // Use Console instead of System.Console
+            var text= new Text();
+            text.Width=100;
+            text.Copy();
         }
-    }
+    } 
 }
