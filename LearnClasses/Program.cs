@@ -3,34 +3,43 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace LearnClasses
 {
-    public class PresentationObject
-    {
-       public int Height{get; set;}
-       public int Width{get; set;}
+    public class Program{
+    public static void Main(string[] args){
+        var dbmigrate = new Dbmigrate(new Logger());
 
-       public void Copy(){
-            System.Console.WriteLine("object is copied");
-       }
-       public void Duplicate(){
-        System.Console.WriteLine("object is duplicated");
-       }
+        var logger = new Logger();
+        var installer = new Installer(logger);
+        dbmigrate.Migrate();
+        installer.Install();
+        
     }
-    public class Text : PresentationObject{
-        public int Fontsize{get; set;}
-        public int Fontname{get; set;}
-
-        public void Hyperlink(string URL){
-            System.Console.WriteLine("URL is added" + URL);
-        }
     }
-
-    class Program
-    {
-        static void Main(string[] args)
+    public class Dbmigrate{
+        private readonly Logger _logger;
+        public Dbmigrate(Logger logger)
         {
-            var text= new Text();
-            text.Width=100;
-            text.Copy();
+            _logger = logger;
         }
-    } 
-}
+        public void Migrate(){
+            _logger.Log("We are migrating using logger");
+        }
+    }
+
+    public class Installer{
+        private readonly Logger _logger;
+
+        public Installer(Logger logger)
+        {
+            _logger=logger;
+        }
+        public void Install(){
+            _logger.Log("We are installing using logger");
+        }
+    }
+    public class Logger{
+        public void Log(string message){
+            System.Console.WriteLine(message);
+        }
+    }
+
+}   
