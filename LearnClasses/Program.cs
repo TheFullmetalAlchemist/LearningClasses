@@ -1,5 +1,5 @@
-using System;
-using System.Security.Cryptography.X509Certificates;
+﻿using System;
+
 
 namespace LearnClasses
 {
@@ -17,7 +17,7 @@ namespace LearnClasses
     //    }
         public Vehicle(string registrationNumber){
             _registrationNumber = registrationNumber;
-            System.Console.WriteLine("vehicle number is {0}",registrationNumber);
+            System.Console.WriteLine("vehicle number is called as {0}",registrationNumber);
         }
     }
     public class Car: Vehicle{

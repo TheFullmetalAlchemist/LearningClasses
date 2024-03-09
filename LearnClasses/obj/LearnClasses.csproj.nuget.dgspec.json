@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vj366\\classes\\LearnClasses\\LearnClasses.csproj": {}
+    "c:\\Users\\vj366\\classes\\LearnClasses\\LearnClasses.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vj366\\classes\\LearnClasses\\LearnClasses.csproj": {
+    "c:\\Users\\vj366\\classes\\LearnClasses\\LearnClasses.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vj366\\classes\\LearnClasses\\LearnClasses.csproj",
+        "projectUniqueName": "c:\\Users\\vj366\\classes\\LearnClasses\\LearnClasses.csproj",
         "projectName": "LearnClasses",
-        "projectPath": "C:\\Users\\vj366\\classes\\LearnClasses\\LearnClasses.csproj",
+        "projectPath": "c:\\Users\\vj366\\classes\\LearnClasses\\LearnClasses.csproj",
         "packagesPath": "C:\\Users\\vj366\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vj366\\classes\\LearnClasses\\obj\\",
+        "outputPath": "c:\\Users\\vj366\\classes\\LearnClasses\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vj366\\AppData\\Roaming\\NuGet\\NuGet.Config"
