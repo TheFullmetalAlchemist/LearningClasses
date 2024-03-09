@@ -1,31 +1,21 @@
 ﻿using System;
-
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace LearnClasses
+
 {
-    public class Program
+    class Program
     {
-    public static void Main(){
-        var car = new Car("XYZ1234");
-    }
-    }
-    public class Vehicle{
-        private readonly String _registrationNumber;
-    //    public Vehicle()
-    //    {
-    //        System.Console.WriteLine("Vehicle is being initialized");
-    //    }
-        public Vehicle(string registrationNumber){
-            _registrationNumber = registrationNumber;
-            System.Console.WriteLine("vehicle number is called as {0}",registrationNumber);
-        }
-    }
-    public class Car: Vehicle{
-        public Car(string registrationNumber)
-        :base(registrationNumber)
+
+        static void Main(string[] args)
         {
-            System.Console.WriteLine("Car is being initialized {0}", registrationNumber);
+
+            var orderProcessor = new OrderProcessor();
+            var order = new Order { DatePlaced = DateTime.Now, TotalPrice = 100f };
+            orderProcessor.Process(order);
         }
-        
     }
 }
